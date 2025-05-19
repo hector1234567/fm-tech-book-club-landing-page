@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "Martian Mono";
+  src: url(/assets/fonts/martian-mono/MartianMono-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(/assets/fonts/inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+$Regular: 400;
+$Semibold: 600;
+$Bold: 700;
+
+@mixin text-1($media) {
+  font-family: "Martian Mono";
+  font-size: 6.2rem;
+  font-weight: $Bold;
+  line-height: 120%;
+  letter-spacing: -0.2rem;
+
+  @if ($media == "mobile") {
+    font-size: 3.8rem;
+  }
+}
+
+@mixin text-2($media) {
+  font-family: "Martian Mono";
+  font-size: 5rem;
+  font-weight: $Semibold;
+  line-height: 130%;
+  letter-spacing: -0.2rem;
+
+  @if ($media == "mobile") {
+    font-size: 3.4rem;
+  }
+}
+
+@mixin text-3($media) {
+  font-family: "Martian Mono";
+  font-size: 3.4rem;
+  font-weight: $Bold;
+  line-height: 130%;
+  letter-spacing: -0.1rem;
+
+  @if ($media == "mobile") {
+    font-size: 2.4rem;
+    line-height: 110%;
+  }
+}
+
+@mixin text-4($style) {
+  font-family: "Martian Mono";
+  font-size: 2.4rem;
+  font-weight: $Semibold;
+  line-height: 110%;
+  letter-spacing: -0.1rem;
+
+  @if ($style == "regular") {
+    font-weight: $Regular;
+  }
+}
+
+@mixin text-5($style) {
+  font-family: "Inter";
+  font-size: 2rem;
+  font-weight: $Regular;
+  line-height: 140%;
+  letter-spacing: -0.05rem;
+
+  @if ($style == "semibold") {
+    font-weight: $Semibold;
+  }
+}
+
+@mixin text-6($media) {
+  font-family: "Martian Mono";
+  font-size: 1.8rem;
+  font-weight: $Semibold;
+  line-height: 130%;
+  letter-spacing: -0.1rem;
+
+  @if ($media == "mobile") {
+    font-size: 1.6rem;
+  }
+}
+
+@mixin text-7 {
+  font-family: "Martian Mono";
+  font-size: 1.4rem;
+  font-weight: $Semibold;
+  line-height: 120%;
+  letter-spacing: -0.1rem;
+}

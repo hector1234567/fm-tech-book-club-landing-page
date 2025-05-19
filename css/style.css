@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Martian Mono";
+  src: url(/assets/fonts/martian-mono/MartianMono-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+  font-family: "Inter";
+  src: url(/assets/fonts/inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter";
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.05rem;
+}
+
+/*# sourceMappingURL=style.css.map */
