@@ -1,49 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
-
-    <title>Frontend Mentor | Tech book club</title>
-  </head>
-  <body>
-    <div class="container">
-      <header class="header">
-        <div class="header__nav"></div>
-        <div class="header__content">
-          <h1 class="header__heading">Join the ultimate tech book club</h1>
-          <p class="header__sub">
-            Turn your reading time into learning time with fellow tech
-            enthusiasts. Get curated recommendations, join vibrant discussions,
-            and level up your skills one chapter at a time.
-          </p>
-          <a href="#" class="header__btn btn">Review membership options</a>
-          <div class="header__review review"></div>
-        </div>
-      </header>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tech book club</title>
+</head>
+<body>
+  <div class="container">
+  <header class="header">
+    <div class="header__nav"></div>
+    <div class="header__content">
+    <h1 class="header__heading">Join the ultimate tech book club</h1>
+    <p class="header__sub">Turn your reading time into learning time with fellow tech enthusiasts. 
+  Get curated recommendations, join vibrant discussions, and level up your 
+  skills one chapter at a time.</p>
+  <a href="#" class="header__btn btn">Review membership options</a>
+  <div class="header__review review"></div>
+  <figure><img src="assets/images/image-avatars.webp" alt="Avatars"></figure>
+  <div class="review__stars"></div>
+  <p class="review__text">200+ developers joined already</p>
     </div>
-
-    200+ developers joined already Read together, grow together Monthly curated
-    tech reads selected by industry experts Virtual and in-person meetups for
-    deep-dive discussions Early access to new tech book releases Author Q&A
-    sessions with tech thought leaders Not your average book club Connect with a
-    community that speaks your language - from Python to TypeScript and
-    everything in between. Our discussions blend technical depth with practical
-    applications. Your tech reading journey 1 Choose your membership tier 2 Get
-    your monthly book selection 3 Join our discussion forums 4 Attend exclusive
-    meetups Membership options Starter $19/month 1 book/month Online forums
-    Subscribe now Pro $29/month 2 books/month Virtual meetups Subscribe now
-    Enterprise Custom Team access Private sessions Talk to us "This book club
-    transformed my technical reading from a solitary activity into an enriching
-    community experience. The discussions are gold!" Sarah Chen, Software
-    Architect Ready to debug your reading list? Review membership options 200+
-    developers joined already © 2024 - Tech Book Club
-  </body>
+    <figure class="header__image"><img src="assets/images/image-hero-desktop.webp" alt="Photo people reading" srcset=""></figure>
+  </header>
+  <main>
+    <div class="features">
+      <article class="article">
+        <div class="article__content">
+          <h2 class="article__heading">Read together, grow together</h2>
+          <ul class="article__list">
+            <li>Monthly curated tech reads selected by industry experts</li>
+            <li>Virtual and in-person meetups for deep-dive discussions</li>
+            <li>Early access to new tech book releases</li>
+            <li>Author Q&A sessions with tech thought leaders</li>
+          </ul>
+        </div>
+        <figure class="article__img"><img src="assets/images/image-read-together-desktop.webp" alt="Together" srcset=""></figure>
+      </article>
+      <article class="article">
+        <div class="article__content">
+          <h2 class="article__heading">Not your average book club</h2>
+          <p class="article__text">Connect with a community that speaks your language - from <strong>Python</strong> to <strong>TypeScript</strong> and 
+  everything in between. Our discussions blend technical depth with practical applications.</p>
+        </div>
+        <figure class="article__img"><img src="assets/images/image-read-together-desktop.webp" alt="Together" srcset=""></figure>
+      </article>
+    </div>
+    <div class="journey">
+      <h3 class="journey__heading">Your tech<br>reading journey</h3>
+      <ul class="journey__list">
+        <li>
+          <div class="journey__index">1</div>
+          <p class="journey__text">Choose your membership tier</p>
+        </li>
+        <li>
+          <div class="journey__index">2</div>
+          <p class="journey__text">Get your monthly book selection</p>
+        </li>
+        <li>
+          <div class="journey__index">3</div>
+          <p class="journey__text">Join our discussion forums</p>
+        </li>
+        <li>
+          <div class="journey__index">4</div>
+          <p class="journey__text">Attend exclusive meetups</p>
+        </li>
+      </ul>
+    </div>
+    <div class="membership">
+      <h3 class="membership__heading">Membership options</h3>
+      <ul class="membership__cards">
+        <li class="card">
+          <h4 class="card__heading">Starter</h4>
+          <p class="card__price">
+            <strong>$19</strong>
+            <span>/month</span>
+          </p>
+          <ul class="card__features">
+            <li>1 book/month</li>
+            <li>Online forums</li>
+          </ul>
+          <a href="#" class="card__btn btn">Subscribe now</a>
+        </li>
+        <li class="card">
+          <h4 class="card__heading">Pro</h4>
+          <p class="card__price">
+            <strong>$29</strong>
+            <span>/month</span>
+          </p>
+          <ul class="card__features">
+            <li>2 books/month</li>
+            <li>Virtual meetups</li>
+          </ul>
+          <a href="#" class="card__btn btn">Subscribe now</a>
+        </li>
+        <li class="card">
+          <h4 class="card__heading">Enterprise</h4>
+          <p class="card__price">
+            <strong>Custom</strong>
+          </p>
+          <ul class="card__features">
+            <li>Team access</li>
+            <li>Private sessions</li>
+          </ul>
+          <a href="#" class="card__btn btn">Talk to us</a>
+        </li>
+      </ul>
+    </div>
+    <div class="testimony">
+      <div class="testimony__stars"></div>
+      <p class="testimony__text">"This book club transformed my technical reading from a solitary 
+  activity into an enriching community experience. The discussions 
+  are gold!"</p>
+  <p class="testimony__author">Sarah Chen, Software Architect</p>
+    </div>
+  </main>
+  </div>
+  <footer class="footer">
+    <h3 class="footer__heading">Ready to debug your reading list?</h3>
+    <a href="#" class="footer__btn btn">Review membership options</a>
+    
+  <div class="footer__review review"></div>
+  <figure><img src="assets/images/image-avatars.webp" alt="Avatars"></figure>
+  <div class="review__stars"></div>
+  <p class="review__text">200+ developers joined already</p>
+    </div>
+    <div class="footer__bar container">
+      <p class="footer__legal">© 2024 - Tech Book Club</p>
+    </div>
+  </footer>
+</body>
 </html>
