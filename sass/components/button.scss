@@ -1,0 +1,12 @@
+.btn {
+  text-decoration: none;
+  @include text-6("");
+  color: $Neutral-900;
+  display: inline-flex;
+  align-items: center;
+  gap: 1.6rem;
+  border: 0.2rem solid $Neutral-900;
+  height: 6.4rem;
+  padding: 0 2.4rem;
+  border-radius: 0.8rem;
+}

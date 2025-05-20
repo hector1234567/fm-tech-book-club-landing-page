@@ -13,3 +13,8 @@ html {
 body {
   @include text-5("");
 }
+
+@mixin container {
+  width: 100%;
+  max-width: 117.4rem;
+}

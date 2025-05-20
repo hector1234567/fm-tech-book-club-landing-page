@@ -1,0 +1,62 @@
+.header {
+  display: flex;
+  justify-content: center;
+  padding-top: 3.2rem;
+  padding-bottom: 6.6rem;
+
+  background-image: url(/assets/images/pattern-glow.svg),
+    url(/assets/images/pattern-light-bg.svg), $Background-Gradient;
+  background-repeat: no-repeat, repeat, no-repeat;
+  background-position: calc(50% + 72rem) calc(100% + 43rem), center, center;
+
+  &__container {
+    @include container;
+  }
+
+  &__nav {
+    margin-bottom: 8rem;
+
+    img {
+      height: 3.6rem;
+      display: block;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__heading {
+    @include text-1("");
+    background-image: $Text-Gradient;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 2.4rem;
+  }
+
+  &__sub {
+    color: $Neutral-700;
+    max-width: 57rem;
+    margin-bottom: 3.2rem;
+  }
+
+  &__btn {
+    margin-bottom: 2rem;
+  }
+
+  &__image {
+    height: 60.6rem;
+    overflow: hidden;
+    flex-shrink: 0;
+    border-radius: 0.8rem;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+}
