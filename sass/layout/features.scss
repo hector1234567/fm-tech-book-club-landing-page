@@ -4,4 +4,9 @@
   flex-direction: column;
   gap: 12rem;
   padding: 12rem 0;
+
+  @media (max-width: $Tablet) {
+    padding: 8rem 0;
+    gap: 8rem;
+  }
 }

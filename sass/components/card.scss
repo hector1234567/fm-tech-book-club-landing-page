@@ -5,6 +5,12 @@
   border-radius: 0.8rem;
   margin: 1.6rem 0;
 
+  @media (max-width: $Tablet) {
+    width: auto;
+    margin: 0;
+    flex-grow: 1;
+  }
+
   &:nth-child(2) {
     margin: 0;
     width: 110%;
@@ -13,6 +19,11 @@
     background-image: url(/assets/images/pattern-glow.svg);
     background-repeat: no-repeat;
     background-position: calc(50% + 24rem) calc(100% + 52rem);
+
+    @media (max-width: $Tablet) {
+      width: auto;
+      padding: 2.4rem;
+    }
   }
 
   &__heading {

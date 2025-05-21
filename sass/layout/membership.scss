@@ -3,6 +3,10 @@
   max-width: 97rem;
   margin-bottom: 12rem;
 
+  @media (max-width: $Tablet) {
+    max-width: 70.4rem;
+  }
+
   &__heading {
     @include text-2("");
     margin-bottom: 6.4rem;
@@ -14,5 +18,15 @@
     display: flex;
     width: 100%;
     gap: 2.4rem;
+
+    @media (max-width: $Tablet) {
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (max-width: $Tablet) {
+    .card {
+      max-width: calc(50% - 1.2rem);
+    }
   }
 }

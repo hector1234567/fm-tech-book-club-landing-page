@@ -4,6 +4,12 @@
   align-items: center;
   gap: 8rem;
 
+  @media (max-width: $Tablet) {
+    flex-direction: column;
+    gap: 4rem;
+    align-items: stretch;
+  }
+
   &__img {
     width: 56rem;
     height: 52rem;
@@ -11,6 +17,11 @@
     border-radius: 2rem;
     flex-shrink: 0;
     z-index: -1;
+
+    @media (max-width: $Tablet) {
+      width: 100%;
+      height: auto;
+    }
 
     img {
       display: block;
@@ -54,6 +65,11 @@
     max-width: 43.1rem;
     margin-top: 3.4rem;
 
+    @media (max-width: $Tablet) {
+      width: 100%;
+      max-width: unset;
+    }
+
     li {
       display: flex;
       align-items: center;
@@ -84,6 +100,10 @@
 
   &:nth-child(odd) {
     flex-direction: row-reverse;
+
+    @media (max-width: $Tablet) {
+      flex-direction: column;
+    }
   }
 
   &:nth-child(2) {
