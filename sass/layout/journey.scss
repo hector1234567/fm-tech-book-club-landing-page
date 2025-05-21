@@ -21,8 +21,13 @@
     margin-bottom: 8rem;
   }
 
+  @media (max-width: $Mobile) {
+    padding: 6.4rem 1.6rem;
+    margin-bottom: 6.4rem;
+  }
+
   &__heading {
-    @include text-2("");
+    @include text-2;
     color: $Neutral-900;
     text-align: center;
 
@@ -36,7 +41,7 @@
     display: flex;
     justify-content: space-between;
     align-self: stretch;
-    @include text-6("");
+    @include text-6;
 
     @media (max-width: $Tablet) {
       flex-direction: column;

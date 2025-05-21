@@ -12,15 +12,30 @@
     padding-top: 6.4rem;
   }
 
+  @media (max-width: $Mobile) {
+    padding-top: 4.8rem;
+  }
+
   &__heading {
-    @include text-2("");
+    @include text-2;
     max-width: 68.5rem;
     text-align: center;
+
+    @media (max-width: $Mobile) {
+      max-width: 34.3rem;
+    }
   }
 
   &__btn.btn {
-    color: $Neutral-0;
-    border-color: $Neutral-0;
+    @media (max-width: $Mobile) {
+      max-width: 34.3rem;
+    }
+  }
+
+  &__review {
+    @media (max-width: $Mobile) {
+      max-width: 34.3rem;
+    }
   }
 
   &__review .review__text {
@@ -35,6 +50,14 @@
     height: 7rem;
     margin-top: 2.4rem;
     border-top: 0.1rem solid $Neutral-700;
+
+    @media (max-width: $Mobile) {
+      flex-direction: column;
+      align-items: center;
+      padding: 2.4rem;
+      gap: 1.6rem;
+      height: auto;
+    }
   }
 
   &__legal {
@@ -49,6 +72,10 @@
     img {
       height: 2.2rem;
       display: block;
+
+      &:hover {
+        opacity: 0.7;
+      }
     }
   }
 }

@@ -41,7 +41,7 @@
     margin-bottom: 2.4rem;
 
     strong {
-      @include text-3("");
+      @include text-3;
       color: $Neutral-900;
     }
   }

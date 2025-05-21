@@ -14,12 +14,17 @@
     margin-bottom: 8rem;
   }
 
+  @media (max-width: $Mobile) {
+    max-width: 34.3rem;
+    margin-bottom: 6.4rem;
+  }
+
   &__stars {
     display: flex;
   }
 
   &__text {
-    @include text-3("");
+    @include text-3;
     color: $Neutral-900;
   }
 

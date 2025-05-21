@@ -8,6 +8,10 @@ $Mobile: 600px;
   @media (max-width: $Tablet) {
     max-width: 70.4rem;
   }
+
+  @media (max-width: $Mobile) {
+    max-width: 34.3rem;
+  }
 }
 
 *,
@@ -43,6 +47,18 @@ html {
 
   @media (max-width: $Mobile) {
     font-size: 62.5%;
+  }
+
+  @media (max-width: 369px) {
+    font-size: 55%;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 50%;
+  }
+
+  @media (max-width: 293px) {
+    font-size: 45%;
   }
 }
 

@@ -9,4 +9,9 @@
     padding: 8rem 0;
     gap: 8rem;
   }
+
+  @media (max-width: $Mobile) {
+    padding: 6.4rem 0;
+    gap: 6.4rem;
+  }
 }

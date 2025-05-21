@@ -7,10 +7,20 @@
     max-width: 70.4rem;
   }
 
+  @media (max-width: $Mobile) {
+    max-width: 34.3rem;
+    margin-bottom: 6.4rem;
+  }
+
   &__heading {
-    @include text-2("");
+    @include text-2;
     margin-bottom: 6.4rem;
     text-align: center;
+
+    @media (max-width: $Mobile) {
+      margin-bottom: 2.4rem;
+      text-align: left;
+    }
   }
 
   &__cards {
@@ -27,6 +37,12 @@
   @media (max-width: $Tablet) {
     .card {
       max-width: calc(50% - 1.2rem);
+    }
+  }
+
+  @media (max-width: $Mobile) {
+    .card {
+      max-width: unset;
     }
   }
 }

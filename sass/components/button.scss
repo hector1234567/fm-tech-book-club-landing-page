@@ -1,6 +1,6 @@
 .btn {
   text-decoration: none;
-  @include text-6("");
+  @include text-6;
   color: $Neutral-900;
   display: inline-flex;
   align-items: center;
@@ -10,4 +10,37 @@
   height: 6.4rem;
   padding: 0 2.4rem;
   border-radius: 0.8rem;
+
+  transition: all 0.3s ease;
+
+  @media (max-width: $Mobile) {
+    width: 100%;
+    padding: 0;
+  }
+
+  &:hover {
+    background-image: linear-gradient(
+      90deg,
+      $Light-Salmon-100,
+      $Light-Salmon-50
+    );
+  }
+
+  &:focus {
+    outline: 0.2rem solid $Neutral-900;
+    outline-offset: 0.2rem;
+  }
+
+  &--dark {
+    color: $Neutral-0;
+    border-color: $Neutral-0;
+
+    &:hover {
+      background-image: linear-gradient(90deg, $Neutral-700, $Neutral-900);
+    }
+
+    &:focus {
+      outline: 0.2rem solid $Neutral-0;
+    }
+  }
 }

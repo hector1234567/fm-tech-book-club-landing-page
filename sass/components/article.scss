@@ -32,7 +32,7 @@
   }
 
   &__heading {
-    @include text-2("");
+    @include text-2;
     color: $Neutral-900;
 
     strong {

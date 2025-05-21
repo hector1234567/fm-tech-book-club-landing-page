@@ -47,6 +47,21 @@ html {
     font-size: 62.5%;
   }
 }
+@media (max-width: 369px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 293px) {
+  html {
+    font-size: 45%;
+  }
+}
 
 body {
   font-family: "Inter";
@@ -77,6 +92,11 @@ main {
     padding-bottom: 8rem;
   }
 }
+@media (max-width: 600px) {
+  .header {
+    padding-top: 2.4rem;
+  }
+}
 .header__container {
   width: 100%;
   max-width: 117.4rem;
@@ -86,12 +106,22 @@ main {
     max-width: 70.4rem;
   }
 }
+@media (max-width: 600px) {
+  .header__container {
+    max-width: 34.3rem;
+  }
+}
 .header__nav {
   margin-bottom: 8rem;
 }
 @media (max-width: 980px) {
   .header__nav {
     margin-bottom: 6.4rem;
+  }
+}
+@media (max-width: 600px) {
+  .header__nav {
+    margin-bottom: 4.8rem;
   }
 }
 .header__nav img {
@@ -119,6 +149,11 @@ main {
   background-clip: text;
   color: transparent;
   margin-bottom: 2.4rem;
+}
+@media (max-width: 600px) {
+  .header__heading {
+    font-size: 3.8rem;
+  }
 }
 .header__sub {
   color: #385159;
@@ -165,10 +200,21 @@ main {
     max-width: 70.4rem;
   }
 }
+@media (max-width: 600px) {
+  .features {
+    max-width: 34.3rem;
+  }
+}
 @media (max-width: 980px) {
   .features {
     padding: 8rem 0;
     gap: 8rem;
+  }
+}
+@media (max-width: 600px) {
+  .features {
+    padding: 6.4rem 0;
+    gap: 6.4rem;
   }
 }
 
@@ -192,12 +238,23 @@ main {
     max-width: 70.4rem;
   }
 }
+@media (max-width: 600px) {
+  .journey {
+    max-width: 34.3rem;
+  }
+}
 @media (max-width: 980px) {
   .journey {
     align-items: stretch;
     background-position: calc(50% + 26rem) calc(100% + 39rem), center, center;
     padding: 8rem 3.2rem;
     margin-bottom: 8rem;
+  }
+}
+@media (max-width: 600px) {
+  .journey {
+    padding: 6.4rem 1.6rem;
+    margin-bottom: 6.4rem;
   }
 }
 .journey__heading {
@@ -208,6 +265,11 @@ main {
   letter-spacing: -0.2rem;
   color: #062630;
   text-align: center;
+}
+@media (max-width: 600px) {
+  .journey__heading {
+    font-size: 3.4rem;
+  }
 }
 @media (max-width: 980px) {
   .journey__heading {
@@ -224,6 +286,11 @@ main {
   font-weight: 600;
   line-height: 130%;
   letter-spacing: -0.1rem;
+}
+@media (max-width: 600px) {
+  .journey__list {
+    font-size: 1.6rem;
+  }
 }
 @media (max-width: 980px) {
   .journey__list {
@@ -279,6 +346,12 @@ main {
     max-width: 70.4rem;
   }
 }
+@media (max-width: 600px) {
+  .membership {
+    max-width: 34.3rem;
+    margin-bottom: 6.4rem;
+  }
+}
 .membership__heading {
   font-family: "Martian Mono";
   font-size: 5rem;
@@ -287,6 +360,17 @@ main {
   letter-spacing: -0.2rem;
   margin-bottom: 6.4rem;
   text-align: center;
+}
+@media (max-width: 600px) {
+  .membership__heading {
+    font-size: 3.4rem;
+  }
+}
+@media (max-width: 600px) {
+  .membership__heading {
+    margin-bottom: 2.4rem;
+    text-align: left;
+  }
 }
 .membership__cards {
   list-style: none;
@@ -302,6 +386,11 @@ main {
 @media (max-width: 980px) {
   .membership .card {
     max-width: calc(50% - 1.2rem);
+  }
+}
+@media (max-width: 600px) {
+  .membership .card {
+    max-width: unset;
   }
 }
 
@@ -322,6 +411,12 @@ main {
     margin-bottom: 8rem;
   }
 }
+@media (max-width: 600px) {
+  .testimony {
+    max-width: 34.3rem;
+    margin-bottom: 6.4rem;
+  }
+}
 .testimony__stars {
   display: flex;
 }
@@ -332,6 +427,12 @@ main {
   line-height: 130%;
   letter-spacing: -0.1rem;
   color: #062630;
+}
+@media (max-width: 600px) {
+  .testimony__text {
+    font-size: 2.4rem;
+    line-height: 110%;
+  }
 }
 .testimony__author {
   font-family: "Inter";
@@ -357,6 +458,11 @@ main {
     padding-top: 6.4rem;
   }
 }
+@media (max-width: 600px) {
+  .footer {
+    padding-top: 4.8rem;
+  }
+}
 .footer__heading {
   font-family: "Martian Mono";
   font-size: 5rem;
@@ -366,9 +472,25 @@ main {
   max-width: 68.5rem;
   text-align: center;
 }
-.footer__btn.btn {
-  color: #ffffff;
-  border-color: #ffffff;
+@media (max-width: 600px) {
+  .footer__heading {
+    font-size: 3.4rem;
+  }
+}
+@media (max-width: 600px) {
+  .footer__heading {
+    max-width: 34.3rem;
+  }
+}
+@media (max-width: 600px) {
+  .footer__btn.btn {
+    max-width: 34.3rem;
+  }
+}
+@media (max-width: 600px) {
+  .footer__review {
+    max-width: 34.3rem;
+  }
 }
 .footer__review .review__text {
   color: #ffffff;
@@ -388,6 +510,20 @@ main {
     max-width: 70.4rem;
   }
 }
+@media (max-width: 600px) {
+  .footer__bar {
+    max-width: 34.3rem;
+  }
+}
+@media (max-width: 600px) {
+  .footer__bar {
+    flex-direction: column;
+    align-items: center;
+    padding: 2.4rem;
+    gap: 1.6rem;
+    height: auto;
+  }
+}
 .footer__legal {
   font-family: "Martian Mono";
   font-size: 1.4rem;
@@ -403,6 +539,9 @@ main {
 .footer__social img {
   height: 2.2rem;
   display: block;
+}
+.footer__social img:hover {
+  opacity: 0.7;
 }
 
 .btn {
@@ -421,6 +560,35 @@ main {
   height: 6.4rem;
   padding: 0 2.4rem;
   border-radius: 0.8rem;
+  transition: all 0.3s ease;
+}
+@media (max-width: 600px) {
+  .btn {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 600px) {
+  .btn {
+    width: 100%;
+    padding: 0;
+  }
+}
+.btn:hover {
+  background-image: linear-gradient(90deg, #ffe2d1, #fff5ef);
+}
+.btn:focus {
+  outline: 0.2rem solid #062630;
+  outline-offset: 0.2rem;
+}
+.btn--dark {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+.btn--dark:hover {
+  background-image: linear-gradient(90deg, #385159, #062630);
+}
+.btn--dark:focus {
+  outline: 0.2rem solid #ffffff;
 }
 
 .review {
@@ -490,6 +658,11 @@ main {
   line-height: 130%;
   letter-spacing: -0.2rem;
   color: #062630;
+}
+@media (max-width: 600px) {
+  .article__heading {
+    font-size: 3.4rem;
+  }
 }
 .article__heading strong {
   font-weight: inherit;
@@ -632,6 +805,12 @@ main {
   line-height: 130%;
   letter-spacing: -0.1rem;
   color: #062630;
+}
+@media (max-width: 600px) {
+  .card__price strong {
+    font-size: 2.4rem;
+    line-height: 110%;
+  }
 }
 .card__line {
   border: none;
