@@ -31,6 +31,10 @@
     }
   }
 
+  &__content {
+    flex-grow: 1;
+  }
+
   &__heading {
     @include text-2;
     color: $Neutral-900;
