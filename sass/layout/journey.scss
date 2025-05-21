@@ -1,9 +1,10 @@
 .journey {
   @include container;
+  background-color: $Neutral-100;
   background-image: url(/assets/images/pattern-glow.svg),
-    url(/assets/images/pattern-light-bg.svg), $Background-Gradient;
-  background-repeat: no-repeat, repeat, no-repeat;
-  background-position: calc(50% + 50rem) calc(100% + 50rem), center, center;
+    url(/assets/images/pattern-light-bg.svg);
+  background-repeat: no-repeat, repeat;
+  background-position: calc(50% + 50rem) calc(100% + 50rem), center;
   margin-bottom: 12rem;
 
   padding: 8rem 6rem;

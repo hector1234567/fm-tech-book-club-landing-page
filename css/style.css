@@ -82,13 +82,14 @@ main {
   justify-content: center;
   padding-top: 3.2rem;
   padding-bottom: 6.6rem;
-  background-image: url(/assets/images/pattern-glow.svg), url(/assets/images/pattern-light-bg.svg), linear-gradient(90deg, #ffe2d1 0%, #fff5ef 100%);
+  background-color: #faf5f3;
+  background-image: url(/assets/images/pattern-glow.svg), url(/assets/images/pattern-light-bg.svg);
   background-repeat: no-repeat, repeat, no-repeat;
-  background-position: calc(50% + 72rem) calc(100% + 43rem), center, center;
+  background-position: calc(50% + 72rem) calc(100% + 43rem), center;
 }
 @media (max-width: 980px) {
   .header {
-    background-position: calc(50% + 41rem) calc(100% + 43rem), center, center;
+    background-position: calc(50% + 41rem) calc(100% + 43rem), center;
     padding-bottom: 8rem;
   }
 }
@@ -221,9 +222,10 @@ main {
 .journey {
   width: 100%;
   max-width: 117.4rem;
-  background-image: url(/assets/images/pattern-glow.svg), url(/assets/images/pattern-light-bg.svg), linear-gradient(90deg, #ffe2d1 0%, #fff5ef 100%);
-  background-repeat: no-repeat, repeat, no-repeat;
-  background-position: calc(50% + 50rem) calc(100% + 50rem), center, center;
+  background-color: #faf5f3;
+  background-image: url(/assets/images/pattern-glow.svg), url(/assets/images/pattern-light-bg.svg);
+  background-repeat: no-repeat, repeat;
+  background-position: calc(50% + 50rem) calc(100% + 50rem), center;
   margin-bottom: 12rem;
   padding: 8rem 6rem;
   display: flex;

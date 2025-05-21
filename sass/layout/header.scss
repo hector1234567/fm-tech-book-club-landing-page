@@ -3,14 +3,14 @@
   justify-content: center;
   padding-top: 3.2rem;
   padding-bottom: 6.6rem;
-
+  background-color: $Neutral-100;
   background-image: url(/assets/images/pattern-glow.svg),
-    url(/assets/images/pattern-light-bg.svg), $Background-Gradient;
+    url(/assets/images/pattern-light-bg.svg);
   background-repeat: no-repeat, repeat, no-repeat;
-  background-position: calc(50% + 72rem) calc(100% + 43rem), center, center;
+  background-position: calc(50% + 72rem) calc(100% + 43rem), center;
 
   @media (max-width: $Tablet) {
-    background-position: calc(50% + 41rem) calc(100% + 43rem), center, center;
+    background-position: calc(50% + 41rem) calc(100% + 43rem), center;
     padding-bottom: 8rem;
   }
 
