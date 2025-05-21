@@ -1,0 +1,23 @@
+.testimony {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 3.2rem;
+  max-width: 97rem;
+  margin-bottom: 12rem;
+
+  &__stars {
+    display: flex;
+  }
+
+  &__text {
+    @include text-3("");
+    color: $Neutral-900;
+  }
+
+  &__author {
+    @include text-5("");
+    color: $Neutral-700;
+  }
+}

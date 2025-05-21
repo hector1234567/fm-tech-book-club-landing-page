@@ -1,0 +1,54 @@
+.journey {
+  @include container;
+  background-image: url(/assets/images/pattern-glow.svg),
+    url(/assets/images/pattern-light-bg.svg), $Background-Gradient;
+  background-repeat: no-repeat, repeat, no-repeat;
+  background-position: calc(50% + 50rem) calc(100% + 50rem), center, center;
+  margin-bottom: 12rem;
+
+  padding: 8rem 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6.4rem;
+  border-radius: 2rem;
+  overflow: hidden;
+
+  &__heading {
+    @include text-2("");
+    color: $Neutral-900;
+    text-align: center;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-self: stretch;
+    @include text-6("");
+
+    li {
+      max-width: 22.65rem;
+      height: 11rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &:not(:last-child) {
+        background-image: url(/assets/images/pattern-arrow.svg);
+        background-repeat: no-repeat;
+        background-position: top right;
+      }
+    }
+  }
+
+  &__index {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.2rem solid $Neutral-900;
+    border-radius: 0.4rem;
+  }
+}

@@ -1,0 +1,50 @@
+.footer {
+  background-color: $Neutral-900;
+  color: $Neutral-100;
+  padding-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  border-radius: 1.6rem 1.6rem 0 0;
+
+  &__heading {
+    @include text-2("");
+    max-width: 68.5rem;
+    text-align: center;
+  }
+
+  &__btn.btn {
+    color: $Neutral-0;
+    border-color: $Neutral-0;
+  }
+
+  &__review .review__text {
+    color: $Neutral-0;
+  }
+
+  &__bar {
+    @include container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7rem;
+    margin-top: 2.4rem;
+    border-top: 0.1rem solid $Neutral-700;
+  }
+
+  &__legal {
+    @include text-7;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+
+    img {
+      height: 2.2rem;
+      display: block;
+    }
+  }
+}
