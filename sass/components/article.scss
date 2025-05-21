@@ -115,5 +115,13 @@
     background-repeat: no-repeat;
     background-position: calc(50% + 0.5rem) calc(100% - 3.1rem);
     background-size: auto 13.8rem;
+
+    @media (max-width: $Tablet) {
+      background-position: calc(100% - 3.5rem) calc(100% - 3.1rem);
+    }
+
+    @media (max-width: $Mobile) {
+      background-image: none;
+    }
   }
 }
