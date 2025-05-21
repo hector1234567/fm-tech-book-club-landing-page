@@ -1,0 +1,7 @@
+.features {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+  padding: 12rem 0;
+}
