@@ -16,6 +16,21 @@ self.addEventListener("install", function (event) {
         "/assets/images/image-read-together-desktop.webp",
         "/assets/images/image-read-together-mobile.webp",
         "/assets/images/image-read-together-tablet.webp",
+        "/assets/images/favicon-32x32.png",
+        "/assets/images/icon-arrow-down.svg",
+        "/assets/images/icon-arrow-up.svg",
+        "/assets/images/icon-check.svg",
+        "/assets/images/icon-star.svg",
+        "/assets/images/image-avatars.webp",
+        "/assets/images/logo-bluesky.svg",
+        "/assets/images/logo-linkedin.svg",
+        "/assets/images/logo.svg",
+        "/assets/images/logos-tech.svg",
+        "/assets/images/pattern-arrow.svg",
+        "/assets/images/pattern-circle.png",
+        "/assets/images/pattern-dark-bg.svg",
+        "/assets/images/pattern-glow.svg",
+        "/assets/images/pattern-light-bg.svg",
       ]);
     })
   );
